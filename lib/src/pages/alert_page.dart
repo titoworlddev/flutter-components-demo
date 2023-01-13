@@ -10,14 +10,18 @@ class AlertPage extends StatelessWidget {
         title: const Text('Alert Page'),
       ),
       body: Center(
-          child: TextButton(
-        style: TextButton.styleFrom(
+        child: TextButton(
+          style: TextButton.styleFrom(
             backgroundColor: Colors.blue,
             shape: const StadiumBorder(),
-            textStyle: const TextStyle(color: Colors.white)),
-        onPressed: () => _mostrarAlert(context),
-        child: const Text('Mostrar alerta'),
-      )),
+          ),
+          onPressed: () => _mostrarAlert(context),
+          child: const Text(
+            'Mostrar alerta',
+            style: TextStyle(color: Colors.white),
+          ),
+        ),
+      ),
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.keyboard_arrow_left),
         onPressed: () {
