@@ -3,7 +3,6 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 
 import 'package:componentesab/src/routes/routes.dart';
 import 'package:componentesab/src/pages/alert_page.dart';
-// import 'package:componentes/src/pages/home_temp.dart';
 
 void main() => runApp(const MyApp());
 
@@ -28,7 +27,7 @@ class MyApp extends StatelessWidget {
       routes: getAplicationRoutes(),
       onGenerateRoute: (RouteSettings settings) {
         return MaterialPageRoute(
-            builder: (BuildContext context) => AlertPage());
+            builder: (BuildContext context) => const AlertPage());
       },
     );
   }
